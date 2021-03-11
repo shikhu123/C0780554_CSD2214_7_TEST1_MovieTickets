@@ -1,74 +1,99 @@
 <html>
-<head>
-    <title>Book movie tickets</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-</head>
-<table>
-    <tr>
-<td><label for ="text">Pick a movie:</label></td>
-<td><select name="list" id="movie">
-    <option value="avg">Avengers</option>
-    <option value="ff">Fast & Furious</option>
-    <option value="cj">Conjuring</option>
-  </select></td>
-</tr>
-<tr><td><label for="title">Select seats</label></td></tr>
-<tr><td>Row 1:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-<tr><td>Row 2:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-<tr>
-    <td>Row 3:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-<tr>
-    <td>Row 4:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-<tr>
-    <td>Row 5:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-<tr>
-    <td>Row 6:</td>
-    <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
-        <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"></td>
-</tr>
-
-<tr>
-    <td>Empty:<img src="unchecked.png"></td>
-    <td>Selected:<img src="checked.png"> </td>
-    <td>Occupied:<img src="occupied.png"></td>
-
-</tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr>
-    <td><label for = "selected">Movie Selected : </label></td>
-    <td><p id = "movie"></p></td>
-</tr>
-<tr>
-    <td><label for = "price">Ticket price : </label></td>
-    <td><p id = "price"></p></td>
-</tr>
-<tr>
-    <td><label for = "numberofseats">Number of seats : </label></td>
-    <td><p id = "nseats"></p></td>
-</tr>
-<tr>
-    <td><label for = "tprice">Total price : </label></td>
-    <td><p id = "tprice"></p></td>
-</tr>
-
-
-</table>
+   <head>
+      <title>Book movie tickets</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="script.js"></script>
+   </head>
+   <form>
+      <table>
+         <tr>
+            <td><label for ="text">Pick a movie:</label></td>
+            <td>
+               <select name="list" id="movie">
+                  <option value="avg">Avengers</option>
+                  <option value="ff">Fast & Furious</option>
+                  <option value="cj">Conjuring</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td><label for="title">Select seats</label></td>
+         </tr>
+         <tr>
+            <td>Row 1:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Row 2:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Row 3:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Row 4:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Row 5:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Row 6:</td>
+            <td><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+               <input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1"><input type="checkbox" id="1">
+            </td>
+         </tr>
+         <tr>
+            <td>Empty:<img src="unchecked.png"></td>
+            <td>Selected:<img src="checked.png"> </td>
+            <td>Occupied:<img src="occupied.png"></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+         </tr>
+         <tr>
+            <td><label for = "selected">Movie Selected : </label></td>
+            <td>
+               <p id = "movie"></p>
+            </td>
+         </tr>
+         <tr>
+            <td><label for = "price">Ticket price : </label></td>
+            <td>
+               <p id = "price"></p>
+            </td>
+         </tr>
+         <tr>
+            <td><label for = "numberofseats">Number of seats : </label></td>
+            <td>
+               <p id = "nseats"></p>
+            </td>
+         </tr>
+         <tr>
+            <td><label for = "tprice">Total price : </label></td>
+            <td>
+               <p id = "tprice"></p>
+            </td>
+         </tr>
+      </table>
+      <input type = "submit" value="Buy Seats"> 
+   </form>
 </html>
