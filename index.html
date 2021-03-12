@@ -12,6 +12,8 @@
              document.getElementById("tpay").innerHTML = totalprice;
              var seatcount =  localStorage.getItem("seatcount");
              document.getElementById("tseats").innerHTML = seatcount;
+             var mymovie =  localStorage.getItem("mymovie");
+             document.getElementById("mymovie").innerHTML = mymovie;
     return divLength;
 }
 window.onload = function () {
@@ -24,7 +26,9 @@ window.onload = function () {
         <form id = "paymetform">
     <div class="payment">
         <h3>Payment Details</h3>
-        <h3>Total amount to pay: $<span id="tpay"></span> for <span id="tseats"></span> seats</h3>
+        <h3>Movie : <span id="mymovie"></span></h3>
+        <h3>Total selected seats: <span id="tseats"></span> seats</h3>
+        <h3>Total amount to pay: $<span id="tpay"></span></h3>
         <label for="head">Accepted Cards</label>
         <div class="icon-container">
           <i class="fa fa-cc-visa" style="color:navy;"></i>
