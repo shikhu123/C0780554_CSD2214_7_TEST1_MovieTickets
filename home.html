@@ -9,11 +9,16 @@
         var e = document.getElementById("movielist").value;
            
            document.getElementById("movie").innerHTML=e;
+
     }
 
     for(var i=1;i<48;i++){
-        
+        var ch = document.getElementById(i);
+        document.getElementById("movie").innerHTML=ch.value;
+       
     }
+
+    
         </script>
 
    
@@ -24,9 +29,9 @@
             <td><label for ="text">Pick a movie:</label></td>
             <td>
                <select name="list" id="movielist">
-                  <option value="Avengers">Avengers</option>
-                  <option value="Fast & Furious">Fast & Furious</option>
-                  <option value="Conjuring">Conjuring</option>
+                  <option value="Avengers">Avengers ($10:00)</option>
+                  <option value="Fast & Furious">Fast & Furious($15:00)</option>
+                  <option value="Conjuring">Conjuring($20:00)</option>
                </select>
             </td>
          </tr>
