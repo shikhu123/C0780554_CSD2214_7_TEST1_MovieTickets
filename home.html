@@ -59,7 +59,9 @@
          }
          
          
-         
+         function buy(){
+             confirm("Please confirm, you want to buy tickets!!");
+         }
          
             
          
@@ -159,7 +161,7 @@
             </td>
          </tr>
       </table>
-      <input type="button" value="Display" id="button1" onclick="myfunction()">
-      <input type = "submit" value="Buy Seats" id="button2" disabled> 
+      <input type="button" value="Get Quote" id="button1" onclick="myfunction()">
+      <input type = "submit" value="Buy Seats" id="button2" onclick="buy()" disabled> 
    </form>
 </html>
