@@ -3,16 +3,26 @@
       <title>Book movie tickets</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <script src="script.js"></script>
+
+      <script>
+    function myfunction(){
+        var e = document.getElementById("movielist").value;
+           
+           document.getElementById("movie").innerHTML=e;
+    }
+        </script>
+
+   
    </head>
    <form id = "sform" action="index.html">
       <table>
          <tr>
             <td><label for ="text">Pick a movie:</label></td>
             <td>
-               <select name="list" id="movie">
-                  <option value="avg">Avengers</option>
-                  <option value="ff">Fast & Furious</option>
-                  <option value="cj">Conjuring</option>
+               <select name="list" id="movielist">
+                  <option value="Avengers">Avengers</option>
+                  <option value="Fast & Furious">Fast & Furious</option>
+                  <option value="Conjuring">Conjuring</option>
                </select>
             </td>
          </tr>
@@ -94,7 +104,11 @@
             </td>
          </tr>
       </table>
-      <input type="button" value="Display" class="button1" onclick="myfunction">
-      <input type = "submit" value="Buy Seats" class="button2"> 
+
+
+      <input type="button" value="Display" id="button1" onclick="myfunction()">
+      <input type = "submit" value="Buy Seats" id="button2"> 
+
+     
    </form>
 </html>
