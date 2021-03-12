@@ -1,12 +1,15 @@
-body{
+form{
 
 	margin:2% 25% 15% 25%; 
 	box-shadow: 5px 5px #8886; 
 	border: 1px solid; 
 	padding:10;
-    padding-left: 15%;
+    padding-left: 5%;
+    background-color: skyblue;
+    
     
 }
+
 
 input[type=checkbox]{
     width: 20px;
