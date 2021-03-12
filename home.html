@@ -9,11 +9,11 @@
         var e = document.getElementById("movielist").value;
            
            document.getElementById("movie").innerHTML=e;
-
-
-           var checkedValue = null; 
-var inputElements = document.getElementsByClassName('messageCheckbox');
-var count = 0;
+            var price = 0;
+            var tprice=0;
+            var checkedValue = null; 
+                    var inputElements = document.getElementsByClassName('messageCheckbox');
+                                                var count = 0;
 
 for(var i=0; inputElements[i]; ++i){
       if(inputElements[i].checked){
@@ -23,8 +23,19 @@ for(var i=0; inputElements[i]; ++i){
           
       }
       
-}
-document.getElementById("movie").innerHTML=count;
+}                                                                       
+
+
+           if(e=="Avengers"){
+                price=10;
+                tprice=
+                document.getElementById("price").innerHTML=price;
+            }
+
+
+
+
+document.getElementById("nseats").innerHTML=count;
 
     }
 
