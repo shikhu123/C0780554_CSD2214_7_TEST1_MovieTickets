@@ -4,9 +4,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </head>
     <body>
-    <div class="col-50">
-        <h3>Payment</h3>
-        <label for="fname">Accepted Cards</label>
+        <form id = "paymetform">
+    <div class="payment">
+        <h3>Payment Details</h3>
+        <label for="head">Accepted Cards</label>
         <div class="icon-container">
           <i class="fa fa-cc-visa" style="color:navy;"></i>
           <i class="fa fa-cc-amex" style="color:blue;"></i>
@@ -34,19 +35,11 @@
             <td><input type="text" id="expyear" name="expyear" placeholder="2020" required></td></tr>
             <tr><td><label for="cvv">CVV</label></td>
             <td><input type="text" id="cvv" name="cvv" placeholder="352" required></td></tr>
-            
-        
-        
-        
-        
-        
-        
- 
       </div>
       
     </div>
-</table>
-    
-    <input type="submit" value="Continue to checkout" class="btn">
+</table>   
+    <input type="submit" value="Continue" class="button">
+</form>
     </body>
 </html>
