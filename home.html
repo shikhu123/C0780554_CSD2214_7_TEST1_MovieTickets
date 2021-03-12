@@ -3,52 +3,63 @@
       <title>Book movie tickets</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <script src="script.js"></script>
-
       <script>
-    function myfunction(){
-        var e = document.getElementById("movielist").value;
+         function myfunction(){
+             var e = document.getElementById("movielist").value;
+                if (e != 1)
+                document.getElementById("movie").innerHTML=e;
+                 var price = 0;
+                 var tprice=0;
+                 var checkedValue = null; 
+                         var inputElements = document.getElementsByClassName('messageCheckbox');
+                                                     var count = 0;
+         
+         for(var i=0; inputElements[i]; ++i){
+           if(inputElements[i].checked){
+                checkedValue = inputElements[i].value;
+                count++;
+                
+               
+           }
            
-           document.getElementById("movie").innerHTML=e;
-            var price = 0;
-            var tprice=0;
-            var checkedValue = null; 
-                    var inputElements = document.getElementsByClassName('messageCheckbox');
-                                                var count = 0;
-
-for(var i=0; inputElements[i]; ++i){
-      if(inputElements[i].checked){
-           checkedValue = inputElements[i].value;
-           count++;
-           
-          
-      }
-      
-}                                                                       
-
-
-           if(e=="Avengers"){
-                price=10;
-                tprice=
-                document.getElementById("price").innerHTML=price;
-            }
-
-
-
-
-document.getElementById("nseats").innerHTML=count;
-
-    }
-
-    
-
-
-       
-    
-
-    
-        </script>
-
-   
+         }                                                                       
+         
+         
+                if(e=="Avengers"){
+                     price=10;
+                     tprice= price*count;
+                     document.getElementById("price").innerHTML="$"+price;
+                     document.getElementById("tprice").innerHTML="$"+tprice;
+                 }
+                 else if (e=="Fast & Furious"){
+                     price=15;
+                     tprice= price*count;
+                     document.getElementById("price").innerHTML="$"+price;
+                     document.getElementById("tprice").innerHTML="$"+tprice;
+                 }
+                 else if(e=="Conjuring"){
+                     price=20;
+                     tprice= price*count;
+                     document.getElementById("price").innerHTML="$"+price;
+                     document.getElementById("tprice").innerHTML="$"+tprice;
+                 }
+         
+         
+         
+         
+         document.getElementById("nseats").innerHTML=count;
+         
+         }
+         
+         
+         
+         
+            
+         
+         
+         
+             
+      </script>
    </head>
    <form id = "sform" action="index.html">
       <table>
@@ -56,6 +67,7 @@ document.getElementById("nseats").innerHTML=count;
             <td><label for ="text">Pick a movie:</label></td>
             <td>
                <select name="list" id="movielist">
+                <option value="1">Select a movie</option>
                   <option value="Avengers">Avengers ($10:00)</option>
                   <option value="Fast & Furious">Fast & Furious($15:00)</option>
                   <option value="Conjuring">Conjuring($20:00)</option>
@@ -74,32 +86,32 @@ document.getElementById("nseats").innerHTML=count;
          <tr>
             <td>Row 2:</td>
             <td><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox">
-                <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
-             </td>
+               <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
+            </td>
          </tr>
          <tr>
             <td>Row 3:</td>
             <td><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox">
-                <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
-             </td>
+               <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
+            </td>
          </tr>
          <tr>
             <td>Row 4:</td>
             <td><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox">
-                <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
-             </td>
+               <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
+            </td>
          </tr>
          <tr>
             <td>Row 5:</td>
             <td><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox">
-                <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
-             </td>
+               <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
+            </td>
          </tr>
          <tr>
             <td>Row 6:</td>
             <td><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox">
-                <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
-             </td>
+               <input type="checkbox" class="messageCheckbox"><input type="checkbox" class="messageCheckbox" ><input type="checkbox"  class="messageCheckbox"><input type="checkbox"  class="messageCheckbox">
+            </td>
          </tr>
          <tr>
             <td>Empty:<img src="unchecked.png"></td>
@@ -140,11 +152,7 @@ document.getElementById("nseats").innerHTML=count;
             </td>
          </tr>
       </table>
-
-
       <input type="button" value="Display" id="button1" onclick="myfunction()">
       <input type = "submit" value="Buy Seats" id="button2"> 
-
-     
    </form>
 </html>
