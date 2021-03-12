@@ -21,6 +21,10 @@ window.onload = function () {
     showDivLength();
 }
 
+function confirm(){
+             alert("your booking has been confirmed!!");
+         }
+
         </script>
         </head>
     <body>
@@ -51,7 +55,7 @@ window.onload = function () {
             <td><input type="text" id="cname" name="cardname" placeholder="Shikha Sharma" required></td>
             </tr>
             <tr><td><label for="ccnum">Credit card number</label></td>
-            <td><input type="number" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16" required></td></tr>
+            <td><input type="tel" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"  required></td></tr>
             <tr><td><label for="expmonth">Exp Month</label></td>
             <td><input type="text" id="expmonth" name="expmonth" placeholder="September" required></td></tr>
             <tr><td><label for="expyear">Exp Year</label></td>
@@ -63,7 +67,7 @@ window.onload = function () {
     </div>
 </table>
     
-    <input type="submit" value="Continue" class="button">
+    <input type="submit" value="Continue" class="button" onclick="confirm()">
 </form>
     </body>
 </html>
