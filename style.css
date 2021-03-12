@@ -1,7 +1,10 @@
 body{
-    border: 1px solid black ;
-   	
-     margin:2% 25% 2% 25%; 
+
+	margin:2% 25% 15% 25%; 
+	box-shadow: 5px 5px #8886; 
+	border: 1px solid; 
+	padding:10;
+    padding-left: 15%;
     
 }
 

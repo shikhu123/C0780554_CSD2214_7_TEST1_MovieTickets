@@ -2,6 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script>
            
             
@@ -38,19 +39,19 @@ window.onload = function () {
         </div>
         <table>
             <tr><td><label for="name">FullName: </label></td>
-                <td><input type="text" id="name" name="fullname" placeholder="John" required></td>
+                <td><input type="text" id="name" name="fullname" placeholder="Shikha" required></td>
                 </tr>
                 <tr><td><label for="email">Email: </label></td>
                     <td><input type="email" id="email" name="email" placeholder="abc@gmail.com" required></td>
                     </tr>
-                    <tr><td><label for="number">Email: </label></td>
-                        <td><input type="number" id="number" name="number" placeholder="(123)-456-7890" required></td>
+                    <tr><td><label for="number">Contact Number: </label></td>
+                        <td><input type="number" id="number" name="number" placeholder="(123)-456-7890" maxlength="10" required></td>
                         </tr>
             <tr><td><label for="cname">Name on Card: </label></td>
-            <td><input type="text" id="cname" name="cardname" placeholder="John More Doe" required></td>
+            <td><input type="text" id="cname" name="cardname" placeholder="Shikha Sharma" required></td>
             </tr>
             <tr><td><label for="ccnum">Credit card number</label></td>
-            <td><input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required></td></tr>
+            <td><input type="number" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16" required></td></tr>
             <tr><td><label for="expmonth">Exp Month</label></td>
             <td><input type="text" id="expmonth" name="expmonth" placeholder="September" required></td></tr>
             <tr><td><label for="expyear">Exp Year</label></td>
